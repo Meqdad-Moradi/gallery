@@ -22,13 +22,14 @@ function App() {
          {images?.map((image, index) => {
             const { albumId, id, url, title, thumbnailUrl } = image;
 
-            if (albumId >= 1 && albumId < 2) {
+            if (albumId <= 2) {
                return (
                   <div key={index} className="img-container">
                      <div className="img-box">
                         <img src={url} alt={id} />
                      </div>
                      <p>{title}</p>
+                     <p>{albumId}</p>
                   </div>
                );
             }
