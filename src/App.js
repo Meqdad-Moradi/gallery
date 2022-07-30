@@ -29,7 +29,6 @@ function App() {
                         <img src={url} alt={id} />
                      </div>
                      <p>{title}</p>
-                     <p>{albumId}</p>
                   </div>
                );
             }
